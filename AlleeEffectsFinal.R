@@ -137,5 +137,5 @@ keep<-read.csv(file="SPDs/WorldTrimmed2.csv", header=T)
 
 # sum and save new csvs.
 sum30 <- rollapply(keep,30,(sum),by=30,by.column=TRUE,align='right')
-write.table(sum30, file = "SPDs/sums/worldsum30.csv", sep = ",")
+write.table(sum30, file = "SPDs/worldsum30.csv", sep = ",")
 
